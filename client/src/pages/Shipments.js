@@ -1,9 +1,10 @@
 import React from "react";
 import Dashboard from "../components/templates/Dashboard";
+import Shipment from "../components/organisms/Shipment";
+import { PageHeader } from "../components/atoms/Typography";
 
 /* import actions */
 import { getShipments } from "../actions/shipment.actions";
-import Shipment from "../components/organisms/Shipment";
 
 export default class Shipments extends React.Component {
     state = {shipments: []};
@@ -12,11 +13,10 @@ export default class Shipments extends React.Component {
         this.setState({shipments})
     }
     render() {
-        console.log("THIS IS THE STATE: ", this.state);
         const { shipments } = this.state;
         return (
             <Dashboard>
-                SHIPMENTS PAGE
+                <PageHeader>Shipments</PageHeader>
                 <div>
                     {shipments.map((shipment) => <Shipment shipment={shipment} key={shipment.id} />)}
                 </div>
