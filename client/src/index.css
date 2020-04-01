@@ -1,0 +1,19 @@
+@import '~antd/dist/antd.css';
+
+:root {
+  --bg-grey: #F0F2F5;
+  --border-grey: #DADDE1;
+  --text-grey: #65676B;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
